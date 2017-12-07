@@ -1,7 +1,3 @@
-/**
- * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
- * http://cssreset.com
- */
 html,
 body,
 div,
@@ -72,20 +68,26 @@ figure,
 figcaption,
 footer,
 header,
+hgroup,
 menu,
 nav,
 output,
 ruby,
 section,
 summary,
-time,
 mark,
 audio,
-video,
-input {
+video {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: "微软雅黑";
+  line-height: 1.7em;
+  vertical-align: baseline;
+  color: #333;
+}
+img {
+  width: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -95,6 +97,7 @@ figcaption,
 figure,
 footer,
 header,
+hgroup,
 menu,
 nav,
 section {
@@ -102,6 +105,18 @@ section {
 }
 body {
   line-height: 1;
+  background: #fff;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 blockquote,
 q {
@@ -111,95 +126,313 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
+  content: '';
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* custom */
-a {
-  color: #7e8c8d;
-  text-decoration: none;
-  -webkit-backface-visibility: hidden;
+.page-nav {
+  width: 100%;
+  text-align: left;
+  height: 120px;
+  line-height: 15%;
+  background: #feed22;
 }
-li {
-  list-style: none;
+@media (min-width: 450px) {
+  .page-nav .logo {
+    width: 90px;
+    border: 8px #fff solid;
+    vertical-align: middle;
+    margin-top: 11px;
+    margin-left: 15%;
+    margin-right: 4%;
+  }
 }
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+@media (max-width: 450px) {
+  .page-nav .logo {
+    height: 70px;
+    border: 8px #fff solid;
+    vertical-align: middle;
+    margin: 17px 5px;
+  }
 }
-::-webkit-scrollbar-track-piece {
-  background-color: rgba(0,0,0,0.2);
-  -webkit-border-radius: 6px;
+.page-nav li {
+  display: inline;
+  padding: 5px;
+  font-size: 14px;
 }
-::-webkit-scrollbar-thumb:vertical {
-  height: 5px;
-  background-color: rgba(125,125,125,0.7);
-  -webkit-border-radius: 6px;
+.page-content {
+  width: 100%;
+  min-height: 80%;
 }
-::-webkit-scrollbar-thumb:horizontal {
-  width: 5px;
-  background-color: rgba(125,125,125,0.7);
-  -webkit-border-radius: 6px;
+.page-fotter {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  margin: 20px auto;
+}
+.page-fotter ul {
+  color: #999;
+}
+.page-fotter ul li {
+  display: inline;
+  padding: 2px;
+  color: #999;
+}
+.page-fotter ul li a {
+  text-decoration: underline;
+  color: #999;
 }
 html,
 body {
   width: 100%;
   height: 100%;
 }
-body {
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-.home-page,
-.home-bg {
+html .home-page,
+body .home-page {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-}
-.home-page .home-bg,
-.home-bg .home-bg {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-image: url("./images/bg2.JPG");
-  background-size: 100% 100%;
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -ms-filter: blur(3px);
-  -o-filter: blur(3px);
-}
-.home-page .home-title,
-.home-bg .home-title {
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -ms-filter: blur(0px);
-  -o-filter: blur(0px);
-  width: 300px;
-  text-align: center;
-  margin: 250px auto;
   color: #fff;
 }
-.home-page .home-nav,
-.home-bg .home-nav {
-  text-align: center;
-  overflow: hidden;
-}
-.home-page .home-nav .list-inline,
-.home-bg .home-nav .list-inline {
+html .home-page .home-bg,
+body .home-page .home-bg {
   width: 100%;
-  float: left;
-  display: block;
-  margin-top: 20px;
+  height: 70%;
+  background: #feed22;
+  text-align: center;
 }
-.home-page .home-nav .list-inline li,
-.home-bg .home-nav .list-inline li {
-  display: inline-block;
-  width: 20%;
+html .home-page .home-bg .home-container,
+body .home-page .home-bg .home-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
 }
-.home-page .home-nav .list-inline li a,
-.home-bg .home-nav .list-inline li a {
-  color: #fff;
+@media (max-width: 700px) {
+  html .home-page .home-bg .home-container .home-logo,
+  body .home-page .home-bg .home-container .home-logo {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  html .home-page .home-bg .home-container .home-logo,
+  body .home-page .home-bg .home-container .home-logo {
+    display: inline;
+    width: 25%;
+    height: 25%;
+    margin-top: 75px;
+    border: 20px #fff solid;
+  }
+}
+@media (max-width: 700px) {
+  html .home-page .home-bg .home-container .home-content,
+  body .home-page .home-bg .home-container .home-content {
+    display: inline-block;
+    width: 100%;
+    margin: 13% auto;
+    height: 220px;
+    vertical-align: top;
+    text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  html .home-page .home-bg .home-container .home-content,
+  body .home-page .home-bg .home-container .home-content {
+    display: inline-block;
+    height: 220px;
+    vertical-align: top;
+    margin-top: 13%;
+    margin-left: 18%;
+    text-align: center;
+  }
+}
+html .home-page .home-bg .home-container .home-title,
+body .home-page .home-bg .home-container .home-title {
+  padding: 5px;
+  color: #333;
+}
+html .home-page .home-bg .home-container .home-intro,
+body .home-page .home-bg .home-container .home-intro {
+  color: #333;
+  margin-top: 10px;
+}
+html .home-page .home-bg .home-container .home-nav,
+body .home-page .home-bg .home-container .home-nav {
+  margin-top: 50px;
+  color: #333;
+}
+html .home-page .home-bg .home-container .home-nav li,
+body .home-page .home-bg .home-container .home-nav li {
+  display: inline;
+  padding: 5px;
+}
+html .home-page .home-bg .home-container .home-nav li a,
+body .home-page .home-bg .home-container .home-nav li a {
+  color: #333;
+}
+html .home-page .home-fotter,
+body .home-page .home-fotter {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+}
+html .home-page .home-fotter ul li,
+body .home-page .home-fotter ul li {
+  display: inline;
+  padding: 2px;
+}
+html .home-page .home-fotter ul li a,
+body .home-page .home-fotter ul li a {
+  color: #333;
+  text-decoration: underline;
+}
+.archive-page {
+  width: 70%;
+  margin-left: 15%;
+}
+.archive-page .archive-text {
+  padding: 35px 5px;
+}
+.archive-page section {
+  margin-left: 5%;
+}
+.archive-page section article {
+  padding: 0px 0px 20px 30px;
+}
+.archive-page section article .archive-title {
+  font-size: 18px;
+}
+.archive-page section article .archive-title a {
+  color: #333;
+}
+.archive-page section article .archive-info {
+  font-size: 14px;
+  padding-left: 2px;
+  margin-top: -5px;
+}
+.archive-page section article .archive-info li {
+  display: inline;
+  padding: 5px 5px 5px 0px;
+  color: #777;
+}
+.archive-page section article .archive-info li a,
+.archive-page section article .archive-info li span {
+  color: #777;
+}
+.archive-page section article .archive-info li .post-tags-list {
+  display: inline;
+}
+.archive-page section article .archive-info li .post-tags-list a {
+  color: #777;
+}
+.archive-page section article .archive-intro {
+  font-size: 14px;
+  color: #777;
+}
+.archive-page section article .archive-intro p,
+.archive-page section article .archive-intro span,
+.archive-page section article .archive-intro a {
+  color: #777;
+}
+.archive-page section article .archive-intro p {
+  text-indent: 10px;
+}
+.post-bg {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.post-page {
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.8);
+  min-height: 500px;
+}
+.post-page .post-content {
+  width: 70%;
+  margin: 0px auto;
+  padding: 10px 0px 20px 0px;
+}
+.post-page .post-content .post-title {
+  text-align: center;
+  padding-top: 5px;
+}
+.post-page .post-content .post-meta {
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+.post-page .post-content .post-meta li,
+.post-page .post-content .post-meta .post-tags-list {
+  display: inline;
+  color: #999;
+}
+.post-page .post-content .post-meta li a,
+.post-page .post-content .post-meta .post-tags-list a {
+  color: #999;
+}
+.post-page .post-content .content {
+  padding-top: 20px;
+  text-indent: 20px;
+  font-size: 14px;
+}
+.tag-list {
+  width: 70%;
+  margin: 0 auto;
+}
+.tag-list h2 {
+  margin: 20px 0px 0px 10px;
+}
+.tag-list p {
+  margin: 0px 0px 20px 20px;
+}
+.tag-list .tag-article {
+  margin-left: 5%;
+}
+.tag-list .tag-article article {
+  margin-bottom: 20px;
+}
+.tag-list .tag-article article .tag-article-info {
+  font-size: 14px;
+  color: #777;
+}
+.tag-list .tag-article article .tag-article-info li {
+  display: inline;
+  color: #777;
+}
+.tag-list .tag-article article .tag-article-info li ul,
+.tag-list .tag-article article .tag-article-info li .tag-article-info li {
+  display: inline;
+}
+.tag-list .tag-article article .tag-article-info li ul a,
+.tag-list .tag-article article .tag-article-info li .tag-article-info li a {
+  color: #777;
+  padding: 5px;
+}
+.tag-page {
+  width: 70%;
+  margin: 10px auto;
+}
+.tag-page h1,
+.tag-page p {
+  text-align: center;
+}
+.tag-page p {
+  color: #777;
+}
+.tag-page .tag-cloud-list {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 8%;
+  text-align: center;
+}
+.tag-page .tag-cloud-list a {
+  padding: 3px;
 }

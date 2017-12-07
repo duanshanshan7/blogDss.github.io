@@ -1,0 +1,53 @@
+.tag-list {
+  width: 70%;
+  margin: 0 auto;
+}
+.tag-list h2 {
+  margin: 20px 0px 0px 10px;
+}
+.tag-list p {
+  margin: 0px 0px 20px 20px;
+}
+.tag-list .tag-article {
+  margin-left: 5%;
+}
+.tag-list .tag-article article {
+  margin-bottom: 20px;
+}
+.tag-list .tag-article article .tag-article-info {
+  font-size: 14px;
+  color: #777;
+}
+.tag-list .tag-article article .tag-article-info li {
+  display: inline;
+  color: #777;
+}
+.tag-list .tag-article article .tag-article-info li ul,
+.tag-list .tag-article article .tag-article-info li .tag-article-info li {
+  display: inline;
+}
+.tag-list .tag-article article .tag-article-info li ul a,
+.tag-list .tag-article article .tag-article-info li .tag-article-info li a {
+  color: #777;
+  padding: 5px;
+}
+.tag-page {
+  width: 70%;
+  margin: 10px auto;
+}
+.tag-page h1,
+.tag-page p {
+  text-align: center;
+}
+.tag-page p {
+  color: #777;
+}
+.tag-page .tag-cloud-list {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 8%;
+  text-align: center;
+}
+.tag-page .tag-cloud-list a {
+  padding: 3px;
+}

@@ -1,0 +1,92 @@
+.archive-page {
+  width: 70%;
+  margin-left: 15%;
+}
+.archive-page .archive-text {
+  padding: 35px 5px;
+}
+.archive-page section {
+  margin-left: 5%;
+}
+.archive-page section article {
+  padding: 0px 0px 20px 30px;
+}
+.archive-page section article .archive-title {
+  font-size: 18px;
+}
+.archive-page section article .archive-title a {
+  color: #333;
+}
+.archive-page section article .archive-info {
+  font-size: 14px;
+  padding-left: 2px;
+  margin-top: -5px;
+}
+.archive-page section article .archive-info li {
+  display: inline;
+  padding: 5px 5px 5px 0px;
+  color: #777;
+}
+.archive-page section article .archive-info li a,
+.archive-page section article .archive-info li span {
+  color: #777;
+}
+.archive-page section article .archive-info li .post-tags-list {
+  display: inline;
+}
+.archive-page section article .archive-info li .post-tags-list a {
+  color: #777;
+}
+.archive-page section article .archive-intro {
+  font-size: 14px;
+  color: #777;
+}
+.archive-page section article .archive-intro p,
+.archive-page section article .archive-intro span,
+.archive-page section article .archive-intro a {
+  color: #777;
+}
+.archive-page section article .archive-intro p {
+  text-indent: 10px;
+}
+.post-bg {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.post-page {
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.8);
+  min-height: 500px;
+}
+.post-page .post-content {
+  width: 70%;
+  margin: 0px auto;
+  padding: 10px 0px 20px 0px;
+}
+.post-page .post-content .post-title {
+  text-align: center;
+  padding-top: 5px;
+}
+.post-page .post-content .post-meta {
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+.post-page .post-content .post-meta li,
+.post-page .post-content .post-meta .post-tags-list {
+  display: inline;
+  color: #999;
+}
+.post-page .post-content .post-meta li a,
+.post-page .post-content .post-meta .post-tags-list a {
+  color: #999;
+}
+.post-page .post-content .content {
+  padding-top: 20px;
+  text-indent: 20px;
+  font-size: 14px;
+}

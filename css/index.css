@@ -1,0 +1,105 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html .home-page,
+body .home-page {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+html .home-page .home-bg,
+body .home-page .home-bg {
+  width: 100%;
+  height: 70%;
+  background: #feed22;
+  text-align: center;
+}
+html .home-page .home-bg .home-container,
+body .home-page .home-bg .home-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+@media (max-width: 700px) {
+  html .home-page .home-bg .home-container .home-logo,
+  body .home-page .home-bg .home-container .home-logo {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  html .home-page .home-bg .home-container .home-logo,
+  body .home-page .home-bg .home-container .home-logo {
+    display: inline;
+    width: 25%;
+    height: 25%;
+    margin-top: 75px;
+    border: 20px #fff solid;
+  }
+}
+@media (max-width: 700px) {
+  html .home-page .home-bg .home-container .home-content,
+  body .home-page .home-bg .home-container .home-content {
+    display: inline-block;
+    width: 100%;
+    margin: 13% auto;
+    height: 220px;
+    vertical-align: top;
+    text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  html .home-page .home-bg .home-container .home-content,
+  body .home-page .home-bg .home-container .home-content {
+    display: inline-block;
+    height: 220px;
+    vertical-align: top;
+    margin-top: 13%;
+    margin-left: 18%;
+    text-align: center;
+  }
+}
+html .home-page .home-bg .home-container .home-title,
+body .home-page .home-bg .home-container .home-title {
+  padding: 5px;
+  color: #333;
+}
+html .home-page .home-bg .home-container .home-intro,
+body .home-page .home-bg .home-container .home-intro {
+  color: #333;
+  margin-top: 10px;
+}
+html .home-page .home-bg .home-container .home-nav,
+body .home-page .home-bg .home-container .home-nav {
+  margin-top: 50px;
+  color: #333;
+}
+html .home-page .home-bg .home-container .home-nav li,
+body .home-page .home-bg .home-container .home-nav li {
+  display: inline;
+  padding: 5px;
+}
+html .home-page .home-bg .home-container .home-nav li a,
+body .home-page .home-bg .home-container .home-nav li a {
+  color: #333;
+}
+html .home-page .home-fotter,
+body .home-page .home-fotter {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+}
+html .home-page .home-fotter ul li,
+body .home-page .home-fotter ul li {
+  display: inline;
+  padding: 2px;
+}
+html .home-page .home-fotter ul li a,
+body .home-page .home-fotter ul li a {
+  color: #333;
+  text-decoration: underline;
+}
